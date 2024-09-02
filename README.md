@@ -15,6 +15,7 @@ Neural Radiance Fields (NeRF) have demonstrated impressive potential in synthesi
 
 **TL;DR:** We introduce the conception of collaboration in NeRF, which includes the cooperation among sparse input source images and the cooperation among the output of the NeRF to improve few-shot neural rendering. 
 
+
 ## Environment setup
 To start, we prefer creating the environment using conda:
 ```sh
@@ -25,13 +26,15 @@ Please make sure you have up-to-date NVIDIA drivers supporting CUDA 10.2 at leas
 
 Alternatively use `pip -r requirements.txt`.
 
-## Getting the data
 
+## Getting the data
 ### DTU Dataset
 **Image Data:** Please download the Rectified image and pose data from [the official publication](https://roboimagedata.compute.dtu.dk/?page_id=36).
 
+
 ### LLFF dataset
 **Image Data:** Please use [the official download link](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1) from the [NeRF repository](https://github.com/bmild/nerf) for downloading the LLFF dataset.
+
 
 ## Running the model (video generation)
 The main implementation is in the `src/` directory,
@@ -40,6 +43,7 @@ while evalutation scripts are in `eval/`.
 First, download all pretrained weight files from
 <https://drive.google.com/drive/folders/12OKCls3cSIHZKXCkAukFIsmE1mcSufEn?usp=drive_link>.
 Extract this to `<project dir>/checkpoints/`.
+
 
 ### DTU
 Make sure you have downloaded the pretrained weights above, so that `<project dir>/checkpoints/dtu/3v/colnerf_latest` exists. Replace `3v` with `6v` or `9v` to run on a different number of input source views.
@@ -56,6 +60,7 @@ The script will also print the path.
 Note that for DTU, we only use train/val sets, where val is used for test. This is due to the very small size of the dataset.
 The model overfits to the train set significantly during training.
 
+
 ### LLFF
 Make sure you have downloaded the pretrained weights above, so that `<project dir>/checkpoints/llff/fern/3v/colnerf_latest` exists. Replace `3v` with `6v` or `9v` to run on a different number of input source views. Replace `fern` with `<scene>` to run on a different scene.
 
@@ -69,6 +74,7 @@ Remove `--scale 0.25` to render at full resolution (quite slow).
 The script will also print the path.
 
 Note that for LLFF, we utilize the model pretrained on DTU and further fine-tune it on each scene of the LLFF dataset, resulting in corresponding models.
+
 
 ## Overview of flags
 Generally, all scripts in the project take the following flags
@@ -91,6 +97,7 @@ Please refer the the following table for a list of provided experiments with ass
 | DTU                        | dtu           | conf/exp/dtu.conf                  | dtu_dataset.zip                         | path/rs_dtu_4     |
 | LLFF                 | llff      | conf/exp/llff.conf             | nerf_llff_data.zip        | path/nerf_llff_data/scene              |
 
+
 ## Quantitative evaluation instructions
 All evaluation code is in `eval/` directory.
 The full, parallelized evaluation code is in `eval/eval.py`.
@@ -109,10 +116,12 @@ a set of fixed input views. In contrast, `-L` should point to a viewlist file (v
 
 Renderings and progress will be saved to the output directory, specified by `-O <dirname>`.
 
+
 #### DTU
 - 3-view `python eval/eval.py -D <data>/rs_dtu_4 --split val -n dtu -c ./conf/exp/dtu.conf -P '22 25 28' -O eval_out/dtu_3v`
 - 6-view `python eval/eval.py -D <data>/rs_dtu_4 --split val -n dtu -c ./conf/exp/dtu.conf -P '22 25 28 40 44 48' -O eval_out/dtu_6v`
 - 9-view `python eval/eval.py -D <data>/rs_dtu_4 --split val -n dtu -c ./conf/exp/dtu.conf -P '22 25 28 40 44 48 0 8 13' -O eval_out/dtu_9v`
+
 
 #### LLFF
 - 3-view `python eval/eval_llff.py -D <data>/nerf_llff_data -n llff -c ./conf/exp/llff.conf -V 3 -O eval_out/llff_3v`
@@ -129,6 +138,7 @@ To do so run the `eval/calc_metrics.py`, as in the following examples
 - LLFF: `python eval/calc_metrics.py -D <data dir>/nerf_llff_data -O eval_out/llff_3v -F llff`
 
 Adjust -O according to the -O flag of the eval.py command.
+
 
 ## Training instructions
 Training code is in `train/` directory, specifically `train/train.py`.
@@ -147,12 +157,14 @@ Additional flags
 If the checkpoint becomes corrupted for some reason (e.g. if process crashes when saving), a backup is saved to `checkpoints/<expname>/colnerf_backup`.
 To avoid having to specify -c, -D each time, edit `<project root>/expconf.conf` and add rows for your expname in the config and datadir sections.
 
+
 ### Log files and visualizations
 View logfiles with `tensorboard --logdir <project dir>/logs/<expname>`.
 Visualizations are written to  `<project dir>/visuals/<expname>/<epoch>_<batch>_vis.png`.
 They are of the form
 - Top coarse, bottom fine (1 row if fine sample disabled)
 - Left-to-right: input-views, depth, output, alpha.
+
 
 ## Citation
 If you find our work useful, please cite it as
@@ -164,6 +176,7 @@ If you find our work useful, please cite it as
   year={2023}
 }
 ```
+
 
 ## Acknowledgments
 This code is inspired by [PixelNeRF](https://github.com/sxyu/pixel-nerf). We thank the authors for the nicely organized code!
