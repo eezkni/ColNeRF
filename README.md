@@ -6,7 +6,7 @@
 
 <sup>1</sup>Tongji University, <sup>2</sup>Peng Cheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>City University of Hong Kong
 
-This repository provides the official PyTorch implementation for the paper "ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field," AAAI-2024. [Paper](https://arxiv.org/abs/2312.09095)
+This repository provides the official PyTorch implementation for the paper "ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field," AAAI 2024. [Paper](https://arxiv.org/abs/2312.09095)
 
 ![Teaser](./readme-img/paper_teaser.jpg)
 
@@ -179,8 +179,11 @@ If you find our work useful, please cite it as
 @article{ni2023colnerf,
   title={ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field},
   author={Ni, Zhangkai and Yang, Peiqi and Yang, Wenhan and Ma, Lin and Kwong, Sam},
-  journal={arXiv preprint arXiv:2312.09095},
-  year={2023}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={5},
+  pages={4325--4333},
+  year={2024}
 }
 ```
 
