@@ -16,6 +16,13 @@ Neural Radiance Fields (NeRF) have demonstrated impressive potential in synthesi
 **TL;DR:** We introduce the conception of collaboration in NeRF, which includes the cooperation among sparse input source images and the cooperation among the output of the NeRF to improve few-shot neural rendering. 
 
 
+## Experimental Results
+
+<div align="center"> <img src=./readme-img/performance1.png width = "90%" height = "100%" /> </div>
+
+<div align="center"> <img src=./readme-img/performance2.png width = "90%" height = "100%" /> </div>
+
+
 ## Environment setup
 To start, we prefer creating the environment using conda:
 ```sh
