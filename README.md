@@ -18,9 +18,12 @@ Neural Radiance Fields (NeRF) have demonstrated impressive potential in synthesi
 
 ## Experimental Results
 
-<div align="center"> <img src=./readme-img/performance1.png width = "100%" height = "100%" /> </div>
+<!-- <div align="center"> <img src=./readme-img/performance1.png width = "100%" height = "100%" /> </div> -->
+<div align="center"> <img src=./readme-img/performance1.png width = "800" /> </div>
 
-<div align="center"> <img src=./readme-img/performance2.png width = "100%" height = "100%" /> </div>
+
+<!-- <div align="center"> <img src=./readme-img/performance2.png width = "100%" height = "100%" /> </div> -->
+<div align="center"> <img src=./readme-img/performance2.png width = "800" /> </div>
 
 
 ## Environment setup
