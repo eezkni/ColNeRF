@@ -1,12 +1,26 @@
-# ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field
+<div align="center">
+  <h1>ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field</h1>
+</div>
 
-#### Association for the Advancement of Artificial Intelligence (AAAI), 2024
+<h4 align="center"> 
 
 [Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, Peiqi Yang<sup>1</sup>, [Wenhan Yang](https://flyywh.github.io/)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=zh-CN)<sup>1</sup>, [Lin Ma](http://forestlinma.com/)<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=zh-CN)<sup>4</sup>
 
 <sup>1</sup>Tongji University, <sup>2</sup>Peng Cheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>City University of Hong Kong
 
-This repository provides the official PyTorch implementation for the paper "ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field," AAAI 2024. [Paper](https://arxiv.org/abs/2312.09095)
+Association for the Advancement of Artificial Intelligence (AAAI), 2024
+</h4>
+
+
+<!-- # ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field
+
+#### Association for the Advancement of Artificial Intelligence (AAAI), 2024
+
+[Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, Peiqi Yang<sup>1</sup>, [Wenhan Yang](https://flyywh.github.io/)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=zh-CN)<sup>1</sup>, [Lin Ma](http://forestlinma.com/)<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=zh-CN)<sup>4</sup>
+
+<sup>1</sup>Tongji University, <sup>2</sup>Peng Cheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>City University of Hong Kong -->
+
+This repository provides the official PyTorch implementation for the paper "ColNeRF: Collaboration for Generalizable Sparse Input Neural Radiance Field," Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), vol. 38, no. 5, pp. 4325-4333, 2024. [Paper-official](https://ojs.aaai.org/index.php/AAAI/article/view/28229) | [Paper-arXiv](https://arxiv.org/abs/2312.09095)
 
 ![Teaser](./readme-img/paper_teaser.jpg)
 
