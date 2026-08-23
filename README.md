@@ -4,7 +4,7 @@
 
 <h4 align="center"> 
 
-[Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, Peiqi Yang<sup>1</sup>, [Wenhan Yang](https://flyywh.github.io/)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=zh-CN)<sup>1</sup>, [Lin Ma](http://forestlinma.com/)<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=zh-CN)<sup>4</sup>
+[Zhangkai Ni](https://eezkni.github.io/)<sup>1</sup>, Peiqi Yang<sup>1</sup>, [Wenhan Yang](https://scholar.google.com/citations?user=S8nAnakAAAAJ&hl=en)<sup>2</sup>, [Hanli Wang](https://scholar.google.com/citations?user=WioFu64AAAAJ&hl=en)<sup>1</sup>, [Lin Ma](https://scholar.google.com/citations?user=DAn1pA4AAAAJ&hl=en)<sup>3</sup>, [Sam Kwong](https://scholar.google.com/citations?user=_PVI6EAAAAAJ&hl=en)<sup>4</sup>
 
 <sup>1</sup>Tongji University, <sup>2</sup>Peng Cheng Laboratory, <sup>3</sup>Meituan, <sup>4</sup>City University of Hong Kong
 
